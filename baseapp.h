@@ -2,6 +2,7 @@
 #define BASEAPP_H
 
 #include <windows.h>
+#include <vector>
 
 class BaseApp
 {
@@ -16,7 +17,8 @@ public:
     const int Y_SIZE;
 
 private:
-    CHAR_INFO *mChiBuffer;
+//    CHAR_INFO *mChiBuffer;
+    std::vector<CHAR_INFO> mChiBuffer;
 };
 
 #endif // BASEAPP_H
