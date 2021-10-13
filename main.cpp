@@ -16,4 +16,7 @@ int main (int argc, char *argv[])
         printWall.setPlayFiledY(atoi(argv[2]));
         std::cout << "we use this arguments " << printWall.getPlayFieldX() << " " << printWall.getPlayFieldY() << std::endl;
     }
+
+    printWall.setWalls();
+    printWall.refreshScreen();
 }
